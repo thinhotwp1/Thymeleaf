@@ -1,7 +1,10 @@
 # Thymeleaf
 Spring Thymeleaf
 
-Link drive: https://docs.google.com/document/d/1XpvI4zWgiOVV7Gg2PxigAjBXLoA3WHivwViryt53R8o/edit?usp=sharing
+Link drive: 
+```
+https://docs.google.com/document/d/1XpvI4zWgiOVV7Gg2PxigAjBXLoA3WHivwViryt53R8o/edit?usp=sharing
+```
 
 Khi sử dụng @RestController, Spring Boot giả định rằng bạn đang xây dựng một API RESTful để trả về dữ liệu chứ không phải trang web (HTML) sử dụng Thymeleaf. Vì vậy, @RestController không hỗ trợ Thymeleaf một cách tự động, nó chỉ hỗ trợ trả về dữ liệu theo định dạng JSON hoặc XML (chẳng hạn như khi sử dụng @ResponseBody).
 
