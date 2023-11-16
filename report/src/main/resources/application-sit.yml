@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: report
+  thymeleaf:
+    resourceLoaderPath: classpath:/templates/
+    suffix: .xml
+    cache: false
+    charset: UTF-8
+    enableSpringELCompiler: true
+    properties:
+      input:
+        encoding: UTF-8
+      output:
+        encoding: UTF-8
+config:
+  slf4jfilter:
+    request_header: X-Header-Token
+server:
+  port: 8181
+  servlet:
+    context-path: /report
+vms:
+
+  cors:
+    allowed-origins: "*"
+    allowed-methods: "*"
+    allowed-headers: "*"
+    exposed-headers: "Authorization"
+    allow-credentials: true
+    max-age: 1800
+
+
+logging:
+  file: report
+  path: logs/report
+report:
+  baseUrl: C:/Report
+
+statement:
+  path: D:/Statement

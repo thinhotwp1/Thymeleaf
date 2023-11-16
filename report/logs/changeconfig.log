@@ -1,0 +1,2 @@
+09:22:29.120  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo.225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09:24:52.737  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo.225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable

@@ -1,0 +1,9 @@
+spring:  
+    profiles:
+       include:
+#            - prod
+            #- dev
+            - sit
+            #- uat
+
+

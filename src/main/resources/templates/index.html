@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Employee list</title>
+    <title>Employee l${listDat123a}">ist</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="employee: ${list}">
+        <tr th:each="employee: ${listDat123a}">
             <td th:text="${employee.id}"></td>
             <td th:text="${employee.name}"></td>
             <td th:text="${employee.age}"></td>

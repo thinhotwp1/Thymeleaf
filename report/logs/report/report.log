@@ -1,0 +1,87 @@
+09:22:29.605  [restartedMain] INFO  com.tpb.vms.VmsApplication.logStartupProfileInfo.655 - The following profiles are active: sit,default
+09:22:30.640  [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId.295 - BeanFactory id=90a535e2-6ed7-3818-a9b7-2cf5353418bd
+09:22:30.728  [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization.335 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1ef417cf' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:22:30.732  [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization.335 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:22:31.822  [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize.108 - Tomcat initialized with port(s): 8181 (http)
+09:22:31.839  [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log.173 - Initializing ProtocolHandler ["http-nio-8181"]
+09:22:31.840  [restartedMain] INFO  o.a.catalina.core.StandardService.log.173 - Starting service [Tomcat]
+09:22:31.840  [restartedMain] INFO  o.a.catalina.core.StandardEngine.log.173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+09:22:33.154  [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log.173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09:22:33.161  [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/report].log.173 - Initializing Spring embedded WebApplicationContext
+09:22:33.161  [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext.285 - Root WebApplicationContext: initialization completed in 3544 ms
+09:22:33.181  [restartedMain] INFO  com.tpb.vms.config.CorsProperties.postConstruct.37 - CorsProperties(allowedOrigins=*, allowedMethods=*, allowedHeaders=*, exposedHeaders=Authorization, allowCredentials=true, maxAge=1800)
+09:22:33.197  [restartedMain] DEBUG c.t.v.c.SecurityConfigurationHelper.corsFilter.55 - Registering CORS filter
+09:22:33.235  [restartedMain] DEBUG com.tpb.vms.config.Slf4jMDCFilter.init.242 - Filter 'slf4jMDCFilter' configured for use
+09:22:33.293  [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists.106 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+09:22:33.304  [restartedMain] INFO  c.t.vms.config.BranchServiceProperty.postConstruct.27 - BranchServiceProperty(scheme=null, host=null, port=null, path=null)
+09:22:33.305  [restartedMain] INFO  c.t.v.c.CustomerServiceProperties.postConstruct.42 - CustomerServiceProperties(scheme=null, host=null, port=null, path=null, serviceVersion=null, sourceAppId=null, targetAppId=null, userId=null)
+09:22:33.533  [restartedMain] INFO  c.t.v.m.r.config.ReportProperties.postConstruct.32 - ReportProperties(baseUrl=C:/Report)
+09:22:33.759  [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword******
+
+Using generated security password: ************************************
+
+09:22:33.812  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/**', OPTIONS], []
+09:22:33.812  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/app/**/*.{js,html}'], []
+09:22:33.812  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/i18n/**'], []
+09:22:33.812  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/content/**'], []
+09:22:33.813  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/h2-console/**'], []
+09:22:33.813  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/swagger-ui/index.html'], []
+09:22:33.813  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/test/**'], []
+09:22:33.813  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/register'], []
+09:22:33.813  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/activate'], []
+09:22:33.813  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/logout'], []
+09:22:33.813  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/authenticate'], []
+09:22:33.814  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/account/reset-password***********
+09:22:33.814  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/account/reset-password*************
+09:22:33.844  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48b5501d, org.springframework.security.web.context.SecurityContextPersistenceFilter@10c310f5, org.springframework.security.web.header.HeaderWriterFilter@b862d31, org.springframework.security.web.authentication.logout.LogoutFilter@453b4de5, org.springframework.web.filter.CorsFilter@20a44983, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55d33d34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@619f5f61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69c3b20c, org.springframework.security.web.session.SessionManagementFilter@6ee960f7, org.springframework.security.web.access.ExceptionTranslationFilter@7cce1915, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1276742b]
+09:22:33.960  [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize.181 - Initializing ExecutorService 'applicationTaskExecutor'
+09:22:34.378  [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer.58 - LiveReload server is running on port 35729
+09:22:34.658  [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log.173 - Starting ProtocolHandler ["http-nio-8181"]
+09:22:34.821  [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start.220 - Tomcat started on port(s): 8181 (http) with context path '/report'
+09:22:34.898  [restartedMain] INFO  com.tpb.vms.VmsApplication.logStarted.61 - Started VmsApplication in 6.399 seconds (JVM running for 9.672)
+09:24:35.689  [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown.218 - Shutting down ExecutorService 'applicationTaskExecutor'
+09:24:53.066  [restartedMain] INFO  com.tpb.vms.VmsApplication.logStartupProfileInfo.655 - The following profiles are active: sit,default
+09:24:53.889  [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId.295 - BeanFactory id=90a535e2-6ed7-3818-a9b7-2cf5353418bd
+09:24:53.973  [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization.335 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@406d252f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:24:53.979  [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization.335 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:24:54.832  [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize.108 - Tomcat initialized with port(s): 8181 (http)
+09:24:54.839  [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log.173 - Initializing ProtocolHandler ["http-nio-8181"]
+09:24:54.840  [restartedMain] INFO  o.a.catalina.core.StandardService.log.173 - Starting service [Tomcat]
+09:24:54.840  [restartedMain] INFO  o.a.catalina.core.StandardEngine.log.173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+09:24:55.989  [restartedMain] INFO  org.apache.jasper.servlet.TldScanner.log.173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09:24:55.996  [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/report].log.173 - Initializing Spring embedded WebApplicationContext
+09:24:55.996  [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext.285 - Root WebApplicationContext: initialization completed in 2915 ms
+09:24:56.018  [restartedMain] INFO  com.tpb.vms.config.CorsProperties.postConstruct.37 - CorsProperties(allowedOrigins=*, allowedMethods=*, allowedHeaders=*, exposedHeaders=Authorization, allowCredentials=true, maxAge=1800)
+09:24:56.034  [restartedMain] DEBUG c.t.v.c.SecurityConfigurationHelper.corsFilter.55 - Registering CORS filter
+09:24:56.078  [restartedMain] DEBUG com.tpb.vms.config.Slf4jMDCFilter.init.242 - Filter 'slf4jMDCFilter' configured for use
+09:24:56.135  [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists.106 - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+09:24:56.144  [restartedMain] INFO  c.t.vms.config.BranchServiceProperty.postConstruct.27 - BranchServiceProperty(scheme=null, host=null, port=null, path=null)
+09:24:56.146  [restartedMain] INFO  c.t.v.c.CustomerServiceProperties.postConstruct.42 - CustomerServiceProperties(scheme=null, host=null, port=null, path=null, serviceVersion=null, sourceAppId=null, targetAppId=null, userId=null)
+09:24:56.333  [restartedMain] INFO  c.t.v.m.r.config.ReportProperties.postConstruct.32 - ReportProperties(baseUrl=C:/Report)
+09:24:56.395  [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword******
+
+Using generated security password: ************************************
+
+09:24:56.437  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/**', OPTIONS], []
+09:24:56.438  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/app/**/*.{js,html}'], []
+09:24:56.438  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/i18n/**'], []
+09:24:56.438  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/content/**'], []
+09:24:56.438  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/h2-console/**'], []
+09:24:56.438  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/swagger-ui/index.html'], []
+09:24:56.438  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/test/**'], []
+09:24:56.439  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/register'], []
+09:24:56.439  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/activate'], []
+09:24:56.439  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/logout'], []
+09:24:56.439  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/authenticate'], []
+09:24:56.439  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/account/reset-password***********
+09:24:56.439  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: Ant [pattern='/api/account/reset-password*************
+09:24:56.468  [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init>.43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@441fa871, org.springframework.security.web.context.SecurityContextPersistenceFilter@4192151a, org.springframework.security.web.header.HeaderWriterFilter@5908ccdb, org.springframework.security.web.authentication.logout.LogoutFilter@21a97def, org.springframework.web.filter.CorsFilter@272aad47, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22a10013, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51de53d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49fc04d7, org.springframework.security.web.session.SessionManagementFilter@35fbfd64, org.springframework.security.web.access.ExceptionTranslationFilter@3dc1fa88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40f9b2ef]
+09:24:56.599  [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize.181 - Initializing ExecutorService 'applicationTaskExecutor'
+09:24:56.918  [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer.58 - LiveReload server is running on port 35729
+09:24:57.062  [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log.173 - Starting ProtocolHandler ["http-nio-8181"]
+09:24:57.106  [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start.220 - Tomcat started on port(s): 8181 (http) with context path '/report'
+09:24:57.183  [restartedMain] INFO  com.tpb.vms.VmsApplication.logStarted.61 - Started VmsApplication in 5.058 seconds (JVM running for 7.5)
+09:26:54.289  [http-nio-8181-exec-5] INFO  o.a.c.c.C.[.[localhost].[/report].log.173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:26:54.289  [http-nio-8181-exec-5] INFO  o.s.web.servlet.DispatcherServlet.initServletBean.525 - Initializing Servlet 'dispatcherServlet'
+09:26:54.294  [http-nio-8181-exec-5] INFO  o.s.web.servlet.DispatcherServlet.initServletBean.547 - Completed initialization in 5 ms
+09:36:18.681  [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown.218 - Shutting down ExecutorService 'applicationTaskExecutor'

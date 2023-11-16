@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EKYC_PHIEU_NOP_TIEN" pageWidth="240" pageHeight="500" whenNoDataType="AllSectionsNoDetail" columnWidth="240" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isSummaryNewPage="true">
+	<property name="ireport.zoom" value="2.415765000000015"/>
+	<property name="ireport.x" value="402"/>
+	<property name="ireport.y" value="13"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="style1" mode="Transparent" fill="Solid">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[($V{REPORT_COUNT} % 2) == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#CCCCCC"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="plsql">
+		<![CDATA[]]>
+	</queryString>
+	<field name="amount" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.String"/>
+	<field name="denomination" class="java.lang.String"/>
+	<variable name="SUM_AMOUNT" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$F{amount}==null||$F{amount}==""?0:new Integer($F{amount})]]></variableExpression>
+	</variable>
+	<group name="ACC_GROUP">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="61">
+			<staticText>
+				<reportElement x="0" y="0" width="240" height="30"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bảng kê chi tiết tiền nộp/Cash in stament]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="31"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mệnh giá
+(Denomination)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="30" width="55" height="31"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Số tờ
+(Quantity)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="30" width="85" height="31"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Thành tiền
+(Amount)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Prevent">
+			<textField pattern="#,##0;#,##0-">
+				<reportElement x="100" y="0" width="55" height="15"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantity}==null||$F{quantity}==""?"":new java.text.DecimalFormat("#,##0").format(new Integer($F{quantity}))]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="155" y="0" width="85" height="15"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}==null||$F{amount}==""?"":new java.text.DecimalFormat("#,##0").format(new Integer($F{amount}))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;#,##0-">
+				<reportElement x="0" y="0" width="100" height="15"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{denomination}==null||$F{denomination}==""?"":new java.text.DecimalFormat("#,##0").format(new Integer($F{denomination}))]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="15">
+			<staticText>
+				<reportElement x="0" y="0" width="155" height="15"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tổng cộng (Total)]]></text>
+			</staticText>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="155" y="0" width="85" height="15"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SUM_AMOUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

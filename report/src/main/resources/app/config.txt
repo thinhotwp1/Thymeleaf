@@ -1,0 +1,2 @@
+EncryptAlgorithm==SHA
+EncryptPass==blablabla

@@ -1,0 +1,5 @@
+spring:
+    application:
+        name: vms21
+    profiles:
+        active: default
